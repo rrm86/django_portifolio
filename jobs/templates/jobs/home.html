@@ -1014,107 +1014,47 @@
     </section>
     <!-- End Promo Block -->
 
-    <!-- Video Block -->
-    <section class="container-fluid px-0">
-      <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-bg-cover g-bg-black-opacity-0_6--after" data-options='{direction: "fromtop", animation_duration: 25, direction: "reverse"}'>
-        <!-- Promo Block - Parallax Video -->
-        <div class="dzsparallaxer--target" style="width: 100%; height: 200%;" data-forcewidth_ratio="1.77">
-          <div class="js-bg-video g-pos-abs w-100 h-100" data-hs-bgv-type="vimeo" data-hs-bgv-id="167434033" data-hs-bgv-loop="1"></div>
-        </div>
-        <!-- End Promo Block - Parallax Video -->
-      </div>
-    </section>
-    <!-- End Video Block -->
 
+    <div class="shortcode-html">
+      <br>              
+      <h3 class="center"> My message here</h3>
+      <div class="u-divider u-divider-center u-divider-linear-gradient u-divider-linear-gradient--gray-light-v3 w-50 mx-auto g-my-80">
+        <i class="fa fa-circle u-divider__icon g-bg-white g-color-primary"></i>
+      </div>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quis quo magnam officiis doloribus quia iste vel cum iure voluptatibus ratione maiores numquam sint a natus eveniet placeat quaerat illo sapiente soluta in. Error, exercitationem
+        voluptatibus iste nesciunt sunt quam!</p>
+
+    </div>
+        
     <!-- Cube Portfolio Blocks -->
-    <section class="container g-py-100">
-      <div class="g-mb-50">
-        <div class="d-flex justify-content-start g-brd-bottom g-brd-gray-light-v4 pb-5">
-          <div class="d-block">
-            <h2 class="h1 g-color-black">Work in progress</h2>
-            <span class="d-block g-font-weight-300 g-font-size-22 mr-4 g-mb-6">See our latest News &amp; Works on</span>
-          </div>
-
-          <!-- Social Icons -->
-          <ul class="list-inline align-self-end mb-0">
-            <li class="list-inline-item g-mx-2">
-              <a class="u-icon-v1 u-icon-slide-up--hover g-color-red g-bg-red-opacity-0_1 g-color-red--hover rounded-circle" href="#!">
-                <i class="g-font-size-15 g-line-height-1 u-icon__elem-regular fa fa-facebook"></i>
-                <i class="g-font-size-15 g-line-height-0_8 u-icon__elem-hover fa fa-facebook"></i>
-              </a>
-            </li>
-            <li class="list-inline-item g-mx-2">
-              <a class="u-icon-v1 u-icon-slide-up--hover g-color-teal g-bg-teal-opacity-0_1 g-color-teal--hover rounded-circle" href="#!">
-                <i class="g-font-size-15 g-line-height-1 u-icon__elem-regular fa fa-twitter"></i>
-                <i class="g-font-size-15 g-line-height-0_8 u-icon__elem-hover fa fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item g-mx-2">
-              <a class="u-icon-v1 u-icon-slide-up--hover g-color-cyan g-bg-cyan-opacity-0_1 g-color-cyan--hover rounded-circle" href="#!">
-                <i class="g-font-size-15 g-line-height-1 u-icon__elem-regular fa fa-google-plus"></i>
-                <i class="g-font-size-15 g-line-height-0_8 u-icon__elem-hover fa fa-google-plus"></i>
-              </a>
-            </li>
-            <li class="list-inline-item g-mx-2">
-              <a class="u-icon-v1 u-icon-slide-up--hover g-color-purple g-bg-purple-opacity-0_1 g-color-purple--hover rounded-circle" href="#!">
-                <i class="g-font-size-15 g-line-height-1 u-icon__elem-regular fa fa-linkedin"></i>
-                <i class="g-font-size-15 g-line-height-0_8 u-icon__elem-hover fa fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-          <!-- End Social Icons -->
-        </div>
-      </div>
-
-      <!-- Cube Portfolio Blocks - Filter -->
-      <ul id="filterControls1" class="d-block list-inline g-mb-50">
-        <li class="list-inline-item cbp-filter-item g-color-black g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase pr-2 mb-2" role="button" data-filter="*">
-          Show All
-        </li>
-        <li class="list-inline-item cbp-filter-item g-color-black g-color-primary--hover g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase px-2 mb-2" role="button" data-filter=".identity">
-          Identity
-        </li>
-        <li class="list-inline-item cbp-filter-item g-color-black g-color-primary--hover g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase px-2 mb-2" role="button" data-filter=".design">
-          Design
-        </li>
-        <li class="list-inline-item cbp-filter-item g-color-black g-color-primary--hover g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase px-2 mb-2" role="button" data-filter=".graphic">
-          Graphic
-        </li>
-        <li class="list-inline-item cbp-filter-item g-color-black g-color-primary--hover g-color-gray-dark-v5--active g-font-weight-600 g-font-size-13 text-uppercase g-letter-spacing-0_5 px-2 mb-2" role="button" data-filter=".graphic, .identity">
-          Design &amp; Identity
-        </li>
-      </ul>
-      <!-- End Cube Portfolio Blocks - Filter -->
-
-      <!-- Cube Portfolio Blocks - Content -->
-      <div data-x-gap="30" data-y-gap="30" data-media-queries='[{"width": 1500, "cols": 3}, {"width": 1100, "cols": 3}, {"width": 800, "cols": 3}, {"width": 480, "cols": 2}, {"width": 300, "cols": 1}]'>
-        {%for job in jobs.all %}
-        <!-- Cube Portfolio Blocks - Item -->
-        <div id="shortcode" class="cbp-item identity design">
-          <div class="u-block-hover g-parent">
-            <img class="img-fluid g-transform-scale-1_1--parent-hover g-transition-0_5 g-transition--ease-in-out" src="{{job.image.url}}" alt="Image description">
-            <div class="d-flex w-100 h-100 u-block-hover__additional--fade u-block-hover__additional--fade-in g-pos-abs g-top-0 g-left-0 g-transition-0_3 g-transition--ease-in g-pa-20">
-              <ul class="align-items-end flex-column list-inline mt-auto ml-auto mb-0">
-                <li class="list-inline-item">
-                  <a class="u-icon-v2 u-icon-size--sm g-brd-white g-color-black g-bg-white rounded-circle" href="#!">
-                    <i class="icon-communication-095 u-line-icon-pro"></i>
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-          <div class="text-center g-pa-25">
-            <h3 class="h5 g-color-black mb-1">Todo(Add title in the model)</h3>
-            <p class="g-color-gray-dark-v4 mb-0">{{job.summary}}</p>
-          </div>
-        </div>
-        <!-- End Cube Portfolio Blocks - Item -->
-        {% endfor %}
-      </div>
-      <!-- End Cube Portfolio Blocks - Content -->
-    </section>
     <!-- End Cube Portfolio Blocks -->
+    <div class="row mx-0">
+    {%for job in jobs.all %}
+      <div class="col-lg-4 px-0 g-mb-3">
+        <!-- Article -->
+        <article class="u-block-hover">
+          <figure class="g-overflow-hidden">
+            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{job.image.url}}" alt="Image Description">
+          </figure>
+
+          <div class="text-center g-brd-around g-brd-top-none g-brd-gray-light-v4 g-pa-40">
+            <h3 class="h4 text-uppercase g-font-weight-600 g-mb-10">
+
+              <a class="g-color-gray-dark-v2 g-text-underline--none--hover" href="#!">Put title in the models</a>
+
+            </h3>
+            <p>{{job.summary}}</p>
+            <a class="text-uppercase g-font-weight-600 g-font-size-12" href="#!">Learn More</a>
+          </div>
+        </article>
+        <!-- End Article -->
+      </div>
+    {% endfor %}
+    </div>
+          
+
+
 
     <!-- Footer -->
     <footer class="container g-pt-100 g-pb-20">
@@ -1145,37 +1085,37 @@
 
 
   <!-- JS Global Compulsory -->
-  <script src="static/assets/assets/vendor/jquery/jquery.min.js"></script>
-  <script src="static/assets/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-  <script src="static/assets/assets/vendor/popper.js/popper.min.js"></script>
-  <script src="static/assets/assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+  <script src="static/assets/vendor/popper.js/popper.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 
   <!-- JS Implementing Plugins -->
-  <script src="static/assets/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="static/assets/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-  <script src="static/assets/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-  <script src="static/assets/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
-  <script src="static/assets/assets/vendor/slick-carousel/slick/slick.js"></script>
-  <script src="static/assets/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-  <script src="static/assets/assets/vendor/hs-bg-video/hs-bg-video.js"></script>
-  <script src="static/assets/assets/vendor/hs-bg-video/vendor/player.min.js"></script>
-  <script src="static/assets/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="static/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="static/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+  <script src="static/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+  <script src="static/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+  <script src="static/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="static/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="static/assets/vendor/hs-bg-video/hs-bg-video.js"></script>
+  <script src="static/assets/vendor/hs-bg-video/vendor/player.min.js"></script>
+  <script src="static/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
 
   <!-- JS Unify -->
-  <script src="static/assets/assets/js/hs.core.js"></script>
-  <script src="static/assets/assets/js/components/hs.header.js"></script>
-  <script src="static/assets/assets/js/helpers/hs.hamburgers.js"></script>
-  <script src="static/assets/assets/js/components/hs.tabs.js"></script>
-  <script src="static/assets/assets/js/components/hs.go-to.js"></script>
-  <script src="static/assets/assets/js/components/hs.carousel.js"></script>
-  <script src="static/assets/assets/js/components/hs.cubeportfolio.js"></script>
-  <script src="static/assets/assets/js/helpers/hs.bg-video.js"></script>
-  <script src="static/assets/assets/js/components/hs.popup.js"></script>
-  <script src="static/assets/assets/js/components/hs.go-to.js"></script>
+  <script src="static/assets/js/hs.core.js"></script>
+  <script src="static/assets/js/components/hs.header.js"></script>
+  <script src="static/assets/js/helpers/hs.hamburgers.js"></script>
+  <script src="static/assets/js/components/hs.tabs.js"></script>
+  <script src="static/assets/js/components/hs.go-to.js"></script>
+  <script src="static/assets/js/components/hs.carousel.js"></script>
+  <script src="static/assets/js/components/hs.cubeportfolio.js"></script>
+  <script src="static/assets/js/helpers/hs.bg-video.js"></script>
+  <script src="static/assets/js/components/hs.popup.js"></script>
+  <script src="static/assets/js/components/hs.go-to.js"></script>
 
   <!-- JS Customization -->
-  <script src="static/assets/assets/js/custom.js"></script>
+  <script src="static/assets/js/custom.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
