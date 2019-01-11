@@ -1,5 +1,6 @@
-
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
   {% load staticfiles %}
   <!-- Title -->
@@ -35,6 +36,8 @@
 
 <body>
   <main>
+
+
 
     <!-- Header -->
     <header id="js-header" class="u-header u-header--static">
@@ -74,14 +77,14 @@
               <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
                 <!-- Intro -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="static/assets/index.html" class="nav-link g-py-7 g-px-0 active">Home</a>
+                  <a href="static/assets/index.html" class="nav-link g-py-7 g-px-0 ">Home</a>
                 </li>
                 <!-- End Intro -->
 
 
                 <!-- Features -->
                 <li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
-                  <a id="nav-link--features" class="nav-link g-py-7 g-px-0" href="#!" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">Portfolio</a>
+                  <a id="nav-link--features" class="nav-link g-py-7 g-px-0 active" href="#!" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">Portfolio</a>
 
                   <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu--features" aria-labelledby="nav-link--features">
                     <!-- Features - Headers -->
@@ -113,83 +116,89 @@
     </header>
     <!-- End Header -->
 
-    <!-- Promo Block -->
-    <section class="u-bg-overlay g-bg-img-hero g-bg-bluegray-opacity-0_3--after" style="background-image: url(static/assets/assets/img-temp/1920x800/img1.jpg);">
-      <div class="container u-bg-overlay__inner text-center g-pt-150 g-pb-70">
-        <div class="g-mb-100">
-          <span class="d-block g-color-white g-font-size-20 text-uppercase g-letter-spacing-5 mb-4">The Exhibition of</span>
-          <h1 class="g-color-white g-font-weight-700 g-font-size-20 g-font-size-50--md text-uppercase g-line-height-1_2 g-letter-spacing-10 mb-4">Creative Portfolios</h1>
-          <span class="d-block lead g-color-white g-letter-spacing-2">Examples of Our Branding Projects</span>
-        </div>
-
-        <div class="g-pos-abs g-left-0 g-right-0 g-z-index-2 g-bottom-30">
-          <a class="js-go-to btn u-btn-outline-white g-color-white g-bg-white-opacity-0_1 g-color-black--hover g-bg-white--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-11" href="#!" data-target="#content">
-            <i class="fa fa-angle-down"></i>
-          </a>
+    <!-- Breadcrumbs -->
+    <section class="g-bg-gray-light-v5 g-py-50">
+      <div class="container">
+        <div class="d-sm-flex text-center">
+          <div class="align-self-center">
+            <h2 class="h3 g-font-weight-300 w-100 g-mb-10 g-mb-0--md">Portfolio</h2>
+          </div>
         </div>
       </div>
     </section>
-    <!-- End Promo Block -->
+    <!-- End Breadcrumbs -->
 
-    <section class="g-pt-70">
-        <div class="text-center g-mb-50">
-            <h2 class="h4">
-              <span class="g-color-primary g-ml-5">P</span>ortfolio
-            </h2>
+    <!-- Blog Masonry Blocks -->
+    <div class="container g-pt-100 g-pb-70">
+      <div class="masonry-grid row g-mb-70">
+        <div class="masonry-grid-sizer col-sm-1"></div>
+
+        <div class="masonry-grid-item col-lg-3 g-mb-30">
+          <!-- Article -->
+          <article class="u-shadow-v11 g-bg-cover g-bg-size-cover g-bg-pos-top-center g-bg-purple-gradient-opacity-v1--after" style="background-image: url(assets/img-temp/500x450/img11.jpg);">
+            <div class="g-pos-rel g-z-index-1 g-px-30 g-py-60">
+              <div class="mb-5">
+                <div class="g-width-20 g-height-1 g-bg-white-opacity-0_5 mb-4"></div>
+                <span class="d-block g-color-white-opacity-0_9">Ronnald R Machado</span>
+                <h4 class="h5 g-color-white-opacity-0_9">Exclusive interview with InVision's CEO</h4>
+              </div>
+              <h2 class="g-color-white g-font-weight-700 g-font-size-45 text-capitalize mb-5">Portfolio</h2>
+              <a class="btn btn-md u-btn-outline-white g-font-weight-600 text-uppercase g-rounded-25 g-px-25" href="#!">About Me</a>
+            </div>
+          </article>
+          <!-- End Article -->
         </div>
-        <div class="container">
-          <div class="u-divider u-divider-center u-divider-linear-gradient u-divider-linear-gradient--gray-light-v3 w-50 mx-auto g-my-80">
-            <i class="fa fa-circle u-divider__icon g-bg-white g-color-primary"></i>
-          </div>
+
+        <div class="masonry-grid-item col-sm-6 col-lg-3 g-mb-30">
+          <!-- Article -->
+          <article class="u-shadow-v11 g-bg-white g-pa-30">
+            <h3 class="h5 g-color-black g-font-weight-600 text-capitalize mb-0">
+
+                <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">10 Typography Tips Every Business Should Know</a>
+
+              </h3>
+          </article>
+          <!-- End Article -->
         </div>
+        {%for job in jobs.all %}
+        <div class="masonry-grid-item col-sm-6 col-lg-3 g-mb-30">
+          <!-- Article -->
+          <article class="u-shadow-v11 g-bg-white g-pos-rel">
+            <img class="img-fluid w-100" src="{{job.image.url}}" alt="Image Description">
+            <div class="g-pa-30">
+              <h3 class="h5 g-color-black g-font-weight-600 text-capitalize mb-3">
+
+                  <a class="g-color-black g-color-primary--hover g-text-underline--none--hover" href="#!">{{job.summary}}</a>
+
+                </h3>
+              <a href="#!">Read more</a>
+            </div>
+          </article>
+          <!-- End Article -->
+        </div>
+        {% endfor %}
         
-    </section>
-    
-        
-    <!-- Cube Portfolio Blocks -->
-    <!-- End Cube Portfolio Blocks -->
-    <div class="row mx-0">
-    {%for job in jobs.all %}
-      <div class="col-lg-4 px-0 g-mb-3">
-        <!-- Article -->
-        <article class="u-block-hover">
-          <figure class="g-overflow-hidden">
-            <img class="img-fluid w-100 u-block-hover__main--zoom-v1" src="{{job.image.url}}" alt="Image Description">
-          </figure>
 
-          <div class="text-center g-brd-around g-brd-top-none g-brd-gray-light-v4 g-pa-40">
-            <h3 class="h4 text-uppercase g-font-weight-600 g-mb-10">
-
-              <a class="g-color-gray-dark-v2 g-text-underline--none--hover" href="#!">Put title in the models</a>
-
-            </h3>
-            <p>{{job.summary}}</p>
-            <a class="text-uppercase g-font-weight-600 g-font-size-12" href="#!">Learn More</a>
-          </div>
-        </article>
-        <!-- End Article -->
       </div>
-    {% endfor %}
     </div>
-          
+    <!-- End Blog Masonry Blocks -->
 
+    <!-- End Copyright Footer -->
+    <a class="js-go-to u-go-to-v1" href="#!" data-type="fixed" data-position='{
 
+     "bottom": 15,
 
+     "right": 15
 
-  <!-- Copyright Footer -->
-  <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 text-center g-py-20">
-    <div class="container">
-      <small class="g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2018 © All Rights Reserved.
-
-        <a href="#!">Ronnald Rezende Machado</a>
-
-      </small>
-    </div>
-  </footer>
-  <!-- End Copyright Footer -->
+   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+      <i class="hs-icon hs-icon-arrow-top"></i>
+    </a>
   </main>
 
- <!-- JS Global Compulsory -->
+  <div class="u-outer-spaces-helper"></div>
+
+
+  <!-- JS Global Compulsory -->
   <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'assets/vendor/jquery-migrate/jquery-migrate.min.js' %}"></script>
   <script src="{% static 'assets/vendor/jquery-migrate/jquery-migrate.min.js' %}"></script>
@@ -216,20 +225,14 @@
   <!-- JS Plugins Init. -->
   <script>
     $(document).on('ready', function () {
-        // initialization of carousel
-        $.HSCore.components.HSCarousel.init('.js-carousel');
-
         // initialization of tabs
         $.HSCore.components.HSTabs.init('[role="tablist"]');
 
-        // initialization of go to
-        $.HSCore.components.HSGoTo.init('.js-go-to');
-
-        // initialization of video on background
-        $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
-
         // initialization of popups
         $.HSCore.components.HSPopup.init('.js-fancybox');
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
       });
 
       $(window).on('load', function () {
@@ -244,8 +247,14 @@
           breakpoint: 991
         });
 
-        // initialization of cubeportfolio
-        $.HSCore.components.HSCubeportfolio.init('.cbp');
+        // initialization of masonry
+        $('.masonry-grid').imagesLoaded().then(function () {
+          $('.masonry-grid').masonry({
+            columnWidth: '.masonry-grid-sizer',
+            itemSelector: '.masonry-grid-item',
+            percentPosition: true
+          });
+        });
       });
 
       $(window).on('resize', function () {
@@ -254,6 +263,13 @@
         }, 200);
       });
   </script>
+
+
+
+
+
+
+
 </body>
 
-
+</html>
